@@ -14,7 +14,7 @@ print(myVar2)
 var myVar3 = 20.89
 print(myVar3)
 
-var myString: String = ""
+var myString: String
 
 myString = "10"
 
@@ -22,7 +22,9 @@ var myDouble: Double = 10.0
 
 
 let myConst1 = "Codekul"
+
 //myConst1 = "The Gurukul for Coders!"
+
 print(myConst1)
 
 let myConst2: Int = 10
