@@ -69,6 +69,7 @@ print("Before call: \(str)")
 functionWithInOut(param: &str)
 print("After call: \(str)")
 
+
 var myFunc = { () -> String in
     
     print("Function called")
@@ -76,30 +77,31 @@ var myFunc = { () -> String in
 }
 
 myFunc()
+var myNewFunc = myFunc
+myNewFunc()
 
 
 func functionWithFunctionAsAParam(function: (Int) -> Void) {
     print("functionWithFunctionAsAParam")
-//    function(10)
+    function(10)
 }
 
 functionWithFunctionAsAParam { (myInt) in
-    print("Anonyms func")
-    print(myInt)
+    print("My Int: \(myInt)")
 }
 
 
 func myBiggerTask(completion: (Bool) -> Void) {
     print("Bigger task is under process...")
-    completion(false)
+    completion(true)
 }
 
 myBiggerTask { (status) in
     if status {
-        print("Bigger task finished")
+        print("Bigger task completed")
     }
     else {
-        print("Bigger task not finished")
+        print("Bigger task incomplete")
     }
 }
 
@@ -121,7 +123,7 @@ func functionWithVariadic(param: Double...) {
     print(param)
 }
 
-functionWithVariadic(param: 1,2,3,4,5,6,7,8,9,10)
+functionWithVariadic(param: 1,2,3,4,5,6,7,8,9,10,11,12,13)
 
 
 
