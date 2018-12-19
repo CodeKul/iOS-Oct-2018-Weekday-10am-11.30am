@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HandleConstraintsByCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r0z-XV-ORO">
+                                <rect key="frame" x="-200" y="0.0" width="200" height="568"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uo3-IS-g1Q">
+                                        <rect key="frame" x="8" y="20" width="184" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Menu 1">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4f-FY-6la">
+                                        <rect key="frame" x="8" y="76" width="184" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Menu 2">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PmR-gn-IdT">
+                                        <rect key="frame" x="8" y="132" width="184" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Menu 3">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVO-GJ-AWb">
+                                        <rect key="frame" x="8" y="188" width="184" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Menu 4">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="0HB-nY-KB2"/>
+                                    <constraint firstItem="PmR-gn-IdT" firstAttribute="leading" secondItem="r0z-XV-ORO" secondAttribute="leading" constant="8" id="48x-6n-uWj"/>
+                                    <constraint firstAttribute="trailing" secondItem="PmR-gn-IdT" secondAttribute="trailing" constant="8" id="L4T-sy-n8Y"/>
+                                    <constraint firstItem="SVO-GJ-AWb" firstAttribute="top" secondItem="PmR-gn-IdT" secondAttribute="bottom" constant="8" id="PNP-kG-tqQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="uo3-IS-g1Q" secondAttribute="trailing" constant="8" id="dMU-d8-sF0"/>
+                                    <constraint firstAttribute="trailing" secondItem="u4f-FY-6la" secondAttribute="trailing" constant="8" id="g9o-6D-M9l"/>
+                                    <constraint firstItem="uo3-IS-g1Q" firstAttribute="top" secondItem="r0z-XV-ORO" secondAttribute="top" constant="20" id="hQv-we-KLZ"/>
+                                    <constraint firstItem="PmR-gn-IdT" firstAttribute="top" secondItem="u4f-FY-6la" secondAttribute="bottom" constant="8" id="iZe-Hr-ozz"/>
+                                    <constraint firstAttribute="trailing" secondItem="SVO-GJ-AWb" secondAttribute="trailing" constant="8" id="j4Q-EQ-IFg"/>
+                                    <constraint firstItem="u4f-FY-6la" firstAttribute="leading" secondItem="r0z-XV-ORO" secondAttribute="leading" constant="8" id="nan-Wa-9s5"/>
+                                    <constraint firstItem="uo3-IS-g1Q" firstAttribute="leading" secondItem="r0z-XV-ORO" secondAttribute="leading" constant="8" id="on9-wi-rlM"/>
+                                    <constraint firstItem="SVO-GJ-AWb" firstAttribute="leading" secondItem="r0z-XV-ORO" secondAttribute="leading" constant="8" id="yJ2-8G-sjr"/>
+                                    <constraint firstItem="u4f-FY-6la" firstAttribute="top" secondItem="uo3-IS-g1Q" secondAttribute="bottom" constant="8" id="yOG-cg-7z3"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7v-E0-U9h">
+                                <rect key="frame" x="265" y="20" width="39" height="30"/>
+                                <state key="normal" title="Menu">
+                                    <color key="titleColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="menuButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BRx-cd-8e9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="r0z-XV-ORO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-200" id="9y3-A7-EUv"/>
+                            <constraint firstItem="r0z-XV-ORO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="CSr-aD-vSN"/>
+                            <constraint firstItem="r0z-XV-ORO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="JnB-MI-A8V"/>
+                            <constraint firstItem="d7v-E0-U9h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Lw5-VS-cO4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d7v-E0-U9h" secondAttribute="trailing" constant="16" id="Qhy-1U-HJJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="leftConstraints" destination="9y3-A7-EUv" id="fLG-ae-hTy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.875" y="133.09859154929578"/>
+        </scene>
+    </scenes>
+</document>
